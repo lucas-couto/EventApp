@@ -1,0 +1,8 @@
+.TodosEventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TodosEventos h1{
+    color: white;
+}

@@ -1,0 +1,140 @@
+.App {
+  height: 100%;
+  text-align: center;
+}
+/* Estilos Globais */
+.Topo{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: center;
+}
+.Topo span{
+  color: rgb(39, 39, 39);
+  font-size: 2em;
+  padding-left: 1em;
+}
+
+.Topo .Botao{
+  padding: 1em;
+  display: flex;
+}
+.Topo .Botao button{
+  border-radius: 5px;
+  width: 6em;
+  height: 3em;
+  margin: 1em;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(47, 156, 151);
+}
+.Topo .Botao button:hover{
+  background-color: rgb(0, 148, 148);
+}
+
+.Formulario{
+  box-shadow: 0 0 1em gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 30vw;
+  height: 50vh;
+}
+.Formulario .Cabecalho{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center;
+  justify-content: center; */
+  background-color: blue;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.Formulario .Cabecalho span{
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.Formulario .Cabecalho button{
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  height: 3vh;
+  width: 6vw;
+  cursor: pointer;
+}
+
+.Formulario form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Formulario .InputTeclado{
+  padding: 1em;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+}
+.Formulario .InputTeclado input{
+  height: 5vh;
+}
+.Formulario .InputBotao{
+  width: 100%;
+}
+.Formulario .InputBotao input{
+  border-radius: 0 0 10px 10px;
+  height: 6vh;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: rgb(19, 175, 180);
+  cursor: pointer;
+}
+.Formulario .InputBotao input:hover{
+  background-color: rgb(10, 84, 87);
+}
+.Eventos{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.Eventos ul{
+  width: 100%;
+  padding: 0;
+  border-radius: 5px;
+  background-color: white;
+}
+.Eventos .Evento{
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Eventos .Evento li{
+  grid-column: 0/span 1;
+  justify-self: flex-end;
+  align-self: center;
+}
+.Eventos .Evento .Botao{
+  grid-column: 3/span 1;
+  justify-self: flex-start;
+}
+
+.Eventos .Evento:hover{
+  background-color: gray;
+}
+
+@media (max-width: 575.98px){
+  .Topo .Botao{
+    flex-direction: column;
+  }
+}

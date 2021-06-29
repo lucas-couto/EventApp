@@ -1,0 +1,45 @@
+.EventoDestaque{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1em gray;
+    width:  33vw;
+    height: 50vh;
+}
+.EventoDestaque .Informacoes{
+    display: flex;
+    flex-direction: column;
+}
+.EventoDestaque .Descricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.EventoDestaque .Titulo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(255, 255, 96);
+}
+.EventoDestaque button{
+    background-color: rgb(19, 175, 180);
+    border-radius: 10px;
+    border: none;
+    height: 3vh;
+    width: 6vw;
+    cursor: pointer;
+}
+.EventoDestaque .Titulo span{
+    grid-column: 1 / 4;
+    font-size: 30px;
+    justify-self: center;
+}
+.EventoDestaque .Conteudo{
+    display: flex;
+    flex-direction: column;
+}
+.EventoDestaque .Conteudo label{
+    align-self: start;
+    font-size: 1.5em;
+}
